@@ -27,6 +27,6 @@ call ale#linter#Define('sql', {
 \   'name': 'sqlfluff',
 \   'aliases': ['sql-fluff'],
 \   'executable': 'sqlfluff',
-\   'command': 'sqlfluff lint - ',
+\   'command': 'sqlfluff lint --dialect bigquery - ',
 \   'callback': 'ale_linters#sql#sqlfluff#Handle',
 \})
